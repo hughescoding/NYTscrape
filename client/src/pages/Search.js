@@ -90,12 +90,14 @@ class Search extends Component {
                             <li >{author}</li>
                         ))}
                         </ul>
-                        <p>{book.description}</p>
                         <a className="bookLink" href={book.link}>
                         <img className="placeholder" alt="bookicon" src={book.image}/>
                         </a>
+                        <p>{book.description}</p>
+                        
                         <div>
                           <button className="saveMe" onClick={() => this.saveBook(book)}>Save</button>
+                          <br></br>
                         </div>
                       </div>
                     </div>

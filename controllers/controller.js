@@ -3,8 +3,9 @@ const router = express.Router();
 const db = require("../models");
 const mongoose = require("mongoose");
  
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/googlebooks";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/books";
 mongoose.connect(MONGODB_URI);
+
 
 router.delete("/api/books/:id", (req,res) => {
     let id = req.params.id;

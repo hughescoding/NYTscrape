@@ -3,7 +3,10 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const controller = require("./controllers/controller.js");
-
+const mongoose = require("mongoose");
+ 
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/books";
+mongoose.connect(MONGODB_URI);
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
