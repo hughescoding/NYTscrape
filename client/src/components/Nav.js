@@ -7,7 +7,7 @@ class Nav extends Component {
         return (
             <nav>
                 <div className="nav-wrapper green">
-                    <a className="brand-logo center">Google books search</a>
+                    <a href="#" className="brand-logo center">Google books search</a>
                     <ul id="nav-mobile" className="left hide-on-med-and-down">
                     <li><Link to="/">Search</Link></li>
                     <li><Link to="/saved">Saved</Link></li>

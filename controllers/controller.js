@@ -43,7 +43,4 @@ router.get("/api/books", (req,res) =>{
 });
 
 
-
-//todo api/books/:id (delete) from mongo
-
 module.exports = router;;
